@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vamovecria</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form>
+        <p>Login:</p>
+        <p><input type="text" name="usuario" placeholder="Usuário" autofocus></p>
+        <p><input type="password" name="senha" placeholder="Senha"></p>
+        <input type="submit" value="Enviar">
+    </form>
+<br>
+    <h1>Progress</h1>
+        <legend>Baixando</legend>
+        <progress value="50" max="100"></progress>
+<br>
+    <h1>Meter</h1>
+        <meter value="5" min="0" max="10">Capacidade</meter>
+<br>
+    <h1>Required</h1>
+        <form>
+            <label>Aluno:<input name="nome" placeholder="Digite o nome do aluno" size="50" required></label>
+            <p><input type="submit" value="Enviar">
+        </form>
+<br>
+    <h1>Formaction</h1>
+    <form>
+    <fieldset>
+    <legend>Cadastro</legend>
+        <p>Nome:<input type="text" minlength="1" maxlength="50" name="nome" value=""required></p>
+        <p>Email:<input type="email" minlength="1" maxlength="25" name="email" value="" required ></p>
+        <input type="submit" value="Cadastrar Membro" formaction="cadastro_membros.php" formmethod="post">
+        <input type="reset" value="Limpar">
+    </fieldset>
+    </form>
+<br>
+
+</body>
+</html>

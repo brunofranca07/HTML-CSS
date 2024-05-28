@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS</title>
+</head>
+<style>
+    body{background-color: rgb(188, 233, 212);}
+</style>
+<body>
+    <h1>TABELAS</h1>
+    <details>
+        <summary> Tabela</summary>
+    <table widht="60%" border="1">
+        <tr>
+            <th>Time</th>
+            <th>Cidade</th>
+            <th>País</th>
+        </tr>
+        <tr>
+            <td>Flamengo</td>
+            <td>Rio de Janeiro</td>
+            <td>Brasil</td>
+        </tr>
+        <tr>
+            <td>Real Madrid</td>
+            <td>Madrid</td>
+            <td>Espanha</td>
+    </table>
+    <br>
+</details>
+<h1>Mensagem</h1>   
+    <p>Deixe sua mensagem:</p> <textarea name="mensagem"id="mensagem"></textarea></p>
+<h1>Datalist</h1>
+    <fieldset>
+        <legend>Estado do seu time de coração</legend>
+        <label for="Times">Qual seu time de coração?</label>
+        <input list="Times" list="Estados" type="text" id="estados_times"/>
+        <datalist id="Times">
+        <option value="Flamengo">Rio de Janeiro</option>
+        <option value="Vasco">Rio de Janeiro</option>
+        <option value="Botafogo">Rio de Janeiro</option>
+        <option value="Fluminense">Rio de Janeiro</option>
+</datalist>
+</fieldset>
+<br>
+<h1>Caixa de Texto</h1>
+    <form>
+        Nome:<br>
+        <input type="text"name="firstname">
+        <br>
+        Senha:<br>
+        <input type="password"name="senha"size="20">
+</form>
+<br>
+<h1>Radio</h1>
+    <form>
+        <input type="radio" name="Ecivil" value="male" checked>Casado(a)<br>
+        <input type="radio" name="Ecivil" value="female">Solteiro(a)<br>
+        <input type="radio" name="Ecivil" value="other">Divorciado(a)<br>
+        <input type="radio" name="Ecivil" value="other">Viúvo(a)<br>
+</form>
+<br>
+<h1>Checkbox</h1>
+    <form>
+        <input type="checkbox" name="opcoes" value="flamengo">Flamengo<br>
+        <input type="checkbox" name="opcoes" value="vasco">Vasco<br>
+        <input type="checkbox" name="opcoes" value="botafogo">Botafogo<br>
+        <input type="checkbox" name="opcoes" value="fluminense">Fluminense<br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+</form>
+<br>
+<h1> Caixa de Seleção</h1>
+<select time="time_rj" size="6" multiple="multiple">
+    <option value="flamengo">Flamengo</option>
+    <option value="vasco">Vasco</option>
+    <option value="botafogo">Botafogo</option>
+    <option value="fluminense">Fluminense</option>
+    <option value="america">América-RJ</option>
+    <option value="bangu">Bangu</option>
+    <option value="boavista">Boavista</option>
+    <option value="novaiguacu">Nova Iguaçu</option>
+</select>
+<br>
+<h1>Upload de arquivo</h1>
+    <input type="file"></input>
+<br>
+<h1>Cores</h1>
+    <input type="color"></input>
+<br>
+<h1>Botão</h1>
+    <input type="button">
+<br>
+<h1>Botão de Reset</h1>
+<p>Só funciona para form.</p>
+    <input type="reset">
+<br>
+<h1>Data</h1>
+    <input type="data">
+<br>
+<h1>Data-Time</h1>
+    <input type="datetime-local">
+<br>
+<h1>E-mail</h1>
+<form action="cadastrar.php">
+<fieldset>
+<legend>Cadastro</legend>
+    <p>Digite o seu e-mail:<input type="email" size="30" name="email" value=""><input type="submit" value="Enviar">
+</fieldset>
+</form> 
+<br>
+    <h1>Month</h1>
+        <input type="month">
+<br>
+<h1>Number e Range</h1>
+    <h2>Number</h2>
+        <p>Idade:<input type="number" name="idade" min="1" max="120"value="18" step="1"><input type="submit" value="Enviar"></p>
+<br>
+    <h2>Range</h2>
+    <form>
+        <input type="range" name="points" min="0" max="100">
+    </form>
+<br>
+<h1>Search</h1>
+    <form action="pesquisa.php">
+        <input type="search"><input type="submit" name="pesquisa" size="30" value="Pesquisar"></input>
+</form>
+<br>
+    <h1>Time</h1>
+        <input type="time">
+<br>
+<form>
+    <h1>Url</h1>
+        <p>Digite a Url do site:<input type="url" name="urlcad"><input type="submit" value="Procurar"></p>
+</form>
+<br>
+<h1>Week</h1>
+    <input type="week">
+<br>
+
+</body>
+</html>

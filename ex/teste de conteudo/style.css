@@ -1,0 +1,32 @@
+@charset "UTF-8";
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 8px;
+    color: purple;
+}
+h2{
+    text-align: right;
+    border-radius: 8px;
+    color: rgb(81, 221, 221);
+}
+body{
+    background-image: linear-gradient(to right,rgb(0, 0, 255),rgb(77, 77, 255));
+}
+p{
+    text-align: justify;
+    background-color: white;
+    border-radius: 5px;
+    padding-inline: 10px;
+    padding-bottom: 5px;
+}
+#page2{
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+}
+#page2:hover{
+    background-color: rgb(92, 92, 2);
+}
+#page2:visited{
+    color: white;
+}

@@ -1,0 +1,5 @@
+GITHUB
+-lugar para guardar meus arquivos.
+-hospedagem de arquivos.
+-Repositório remoto.
+-push= jogar arquivos no repositorio remoto.

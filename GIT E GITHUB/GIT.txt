@@ -1,0 +1,5 @@
+GIT
+
+-Gerenciador de versões. Consigo salvar versões do meu projeto.
+-Repositório local.
+-Qualquer código e linguagem.
