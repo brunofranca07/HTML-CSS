@@ -21,16 +21,27 @@
             border: 1px solid black;
             font-size: 1.4em;
         }
+        .cinza{
+            background-color: rgb(126, 125, 125);
+        }
+        .branco{
+            background-color: white;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício de Tabelas</h1>
     <table>
+        <colgroup>
+            <col class="cinza">
+            <col class="branco">
+            <col class="cinza">
+        </colgroup>
         <caption>FIlmes Favoritos</caption>
         <thead>
             <tr>
-                <th scope="col">Grupos</th>
-                <th scope="col">Nomes</th>
+                <th scope="colgroup">Grupos</th>
+                <th scope="colgroup">Nomes</th>
                 <th  scope="colgroup" colspan="3">Filmes</th>
             </tr>
         </thead>
