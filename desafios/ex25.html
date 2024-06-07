@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-image:linear-gradient(to bottom, rgb(223, 67, 223), rgb(56,9,56));
+            width: 100vw;
+            height: 100vh;
+            margin: auto;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        main{
+            background-color: purple;
+            margin: auto;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.404) ;
+            margin-top: 40px;
+        }
+        h1{
+            text-align: center;
+            padding-top: 15px;
+            margin: auto;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+            color: yellow;
+        }
+        form{
+            padding: 10px;
+            border-radius: 10px;
+        }
+        input#inome{
+            position: relative;
+            left:3px;
+        }
+        input{
+            border-radius: 10px;
+        }
+        p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Meu Formulário</h1>
+    <form method="POST" action="cadastro.php"  autocomplete="on">
+        <label for="inome">
+            <p>Nome:
+                <input type="text" name="nome" id="inome" required size="20" placeholder="Digite seu nome de usuário" autocomplete="username"></p>
+        </label>
+        <label for="isen">
+            <p>Senha:
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="20" placeholder="Digite sua senha" autocomplete="current-password"></p>
+        </label> 
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"></p>
+    </form>
+</main>
+</body>
+</html>
