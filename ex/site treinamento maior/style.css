@@ -1,43 +1,60 @@
 @charset "UTF-8";
 body{
     background-color: lightblue;
-    margin: 0;
+    margin: auto;
 }
 nav{
     background-color: rgb(36, 106, 129) ;
     font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.233);
+    padding:10px;
+    text-align: center;
+    margin:auto;
 }
 h1{
     background-color: rgb(16, 128, 165);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 10px;
-    margin: 0;
-    box-shadow: 1px 1px 1px 1px black;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.329);
 }
 h2{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align:center ;
+    font-family:Arial, Helvetica, sans-serif;
+    text-indent: 20px;
+    background-color: rgb(36, 106, 129);
+    width: 350px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.342);
 }
 h3{
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin:auto;
     background-color: rgb(133, 168, 180);
     width: 200px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.281);
 }
-p{
+article>p{
     background-color: white;
     text-align: justify;
-    margin-bottom: auto;
     border:rgb(110, 137, 146);
     border-radius: 10px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.281) ;
+    max-width: 720px;
+    min-height: 120px;
+    margin:auto;
+    text-indent: 10px;
+    padding:10px
 }
 .wiki{
-    background-color: lightblue;
+    color: black;
     text-decoration: none;
-    border:1px solid rgba(0, 0, 0, 0.507);
-    border-radius: 0;
-    width: 200px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
 }
 .wiki>a{
     text-decoration:none;
@@ -48,23 +65,29 @@ p{
     color: blue;
 }
 nav>a:hover{
-    color: rgb(60, 69, 146);
-    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    transition: 0.7s;
 }
 nav>a{
     text-decoration: none;
-    margin-right: 128px;
+    margin-right: 100px;
+    text-align:center;
+    color: black;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.473);
 }
 footer>p{
     color: white;
-    background-color: black;
-    border-radius: 0;
+    background-color:black;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
 }
 p>a{
     color: white;
     text-decoration: none;
 }
 footer>p>a:hover{
-    text-decoration: underline;
-    color: red;
+    color: rgb(48, 95, 133);
 }
