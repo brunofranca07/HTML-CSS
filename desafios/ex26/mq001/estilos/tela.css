@@ -10,6 +10,9 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;    
 }
+body{
+    background-color: gray;
+}
 header{
     background-color: lightgray;
 }
@@ -28,9 +31,27 @@ menu li{
     color: white;
     background-color: rgb(75, 74, 74);
 }
+menu li:hover{
+    background-color: gray;
+}
 
 article{
     max-width: 600px;
     display: block;
     margin: auto;
+}
+main{
+    background-color: white;
+    max-width: 700px;
+    margin:auto;
+    border-radius: 10px;
+    padding: 10px;
+    text-indent: 10px;
+}
+p{
+    text-align: justify;
+}
+h2{
+    text-align: left;
+    padding-bottom: 10px;
 }
