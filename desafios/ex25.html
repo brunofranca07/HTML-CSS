@@ -19,7 +19,8 @@
         main{
             background-color: purple;
             margin: auto;
-            max-width: 600px;
+            max-width: 400px;
+            min-height: 100px;
             border-radius: 10px;
             box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.404) ;
             margin-top: 40px;
@@ -28,7 +29,7 @@
             text-align: center;
             padding-top: 15px;
             margin: auto;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+            text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.411);
             color: yellow;
         }
         form{
@@ -39,30 +40,47 @@
             position: relative;
             left:3px;
         }
-        input{
-            border-radius: 10px;
-        }
         p{
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: bolder;
-            color: white;
+            color:white;
+        }
+        .box{
+            border-radius: 10px;
+            border-color: white;
+        }
+        .button{
+            background-image:linear-gradient(to right, rgb(185, 83, 177), purple);
+            text-decoration: none;
+            width: 100px;
+            height: 40px;
+            margin: auto;
+            border-radius: 10px;
+            border-color: purple;
+            margin-left: 55px;
+            color:white;
+        }
+        .button:hover{
+            color: lightpink;
+            transition: 0.4s;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
         }
     </style>
 </head>
 <body>
     <main>
-    <h1>Meu Formulário</h1>
+    <h1>Bem-Vindo(a)</h1>
     <form method="POST" action="cadastro.php"  autocomplete="on">
         <label for="inome">
             <p>Nome:
-                <input type="text" name="nome" id="inome" required size="20" placeholder="Digite seu nome de usuário" autocomplete="username"></p>
+                <input class="box" type="text" name="nome" id="inome" required size="25" placeholder="Digite seu nome de usuário" autocomplete="username"></p>
         </label>
         <label for="isen">
             <p>Senha:
-            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="20" placeholder="Digite sua senha" autocomplete="current-password"></p>
+            <input class="box" type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="25" placeholder="Digite sua senha" autocomplete="current-password"></p>
         </label> 
-        <p><input type="submit" value="Enviar">
-        <input type="reset" value="Limpar"></p>
+        <p><input class="button" type="submit" value="Enviar">
+        <input class="button" type="reset" value="Limpar"></p>
     </form>
 </main>
 </body>
