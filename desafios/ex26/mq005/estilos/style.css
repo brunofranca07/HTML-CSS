@@ -12,11 +12,13 @@ body,html{
 
 header{
     background-color: gray;
+    margin: auto;
 
 }
 header>h1{
     padding: 10px;
     text-align: center;
+    margin: auto;
 }
 i#burguer{
     background-color: rgb(49, 49, 49);
@@ -26,6 +28,7 @@ i#burguer{
     text-align: center;
     padding: 10px;
     cursor: pointer;
+    margin:auto;
 }
 i#burguer:hover{
     background-color: white;
